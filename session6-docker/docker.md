@@ -6,3 +6,4 @@
 
 ![docker system prune](image.png)
 ![docker system df](image-1.png)
+![docker exec -it](image-2.png)
