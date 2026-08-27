@@ -1,0 +1,1 @@
+![ping another container from a container](image.png)
