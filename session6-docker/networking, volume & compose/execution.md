@@ -1,3 +1,5 @@
 ![ping another container from a container](image.png)
 ![ping two containers on different networks](image-1.png)
 ![ping google.com from container using null network](image-2.png)
+![bind mount](image-3.png)
+![making changes to file and testing bind mount](image-4.png)
