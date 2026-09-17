@@ -18,7 +18,7 @@ kubectl version --client
 **Output:**
 ![alt text](image.png)
 
-```
+---
 
 ## Task 2: Starting the Minikube Kubernetes Cluster
 
