@@ -1,17 +1,26 @@
-# VPC - Networking (Virtual Private Cloud)
+## VPC - Networking (Virtual Private Cloud)
 
-## What is VPC?
-Amazon Virtual Private Cloud (Amazon VPC) enables you to launch AWS resources into a virtual network that you've defined. It closely resembles a traditional network that you'd operate in your own data center, with the benefits of using the scalable infrastructure of AWS.
+### What is VPC?
 
-## Key Concepts
+A VPC is a private network in AWS where we can launch and manage our AWS resources.
 
-- **CIDR (Classless Inter-Domain Routing):** A method for allocating IP addresses and IP routing. When you create a VPC, you assign an IPv4 CIDR block (e.g., 10.0.0.0/16) which determines the total number of IP addresses available in that network.
-- **Subnets:** A range of IP addresses in your VPC. You divide a VPC into subnets to group resources based on security and operational needs.
-- **Route Tables:** A set of rules, called routes, that are used to determine where network traffic from your subnet or gateway is directed.
-- **Internet Gateway (IGW):** A horizontally scaled, redundant, and highly available VPC component that allows communication between your VPC and the internet.
-- **NAT Gateway (Network Address Translation):** Allows instances in a private subnet to connect to services outside your VPC (like downloading updates from the internet) but prevents external services from initiating a connection with those instances.
-- **Security Groups:** Stateful firewalls that operate at the instance level to control inbound and outbound traffic.
-- **Network ACLs (Access Control Lists):** Stateless firewalls that operate at the subnet level to control inbound and outbound traffic.
-- **Public vs Private Subnet:**
-  - **Public Subnet:** A subnet whose route table directs internet-bound traffic to an Internet Gateway. Instances here can be accessed from the internet.
-  - **Private Subnet:** A subnet without a direct route to the Internet Gateway. Instances here cannot be reached from the internet directly.
+### Main Components
+
+- **CIDR:** Defines the IP address range of the VPC. Example: `10.0.0.0/16`
+- **Subnets:** Divide the VPC into smaller networks. Usually, we have public and private subnets.
+- **Route Tables:** Decide where the traffic from a subnet should go.
+- **Internet Gateway:** Connects the VPC to the internet. Used by public subnets.
+- **NAT Gateway:** Lets resources in a private subnet access the internet without allowing direct incoming internet traffic.
+- **Security Groups:** Firewall attached to resources like EC2. They control incoming and outgoing traffic.
+- **Network ACLs:** Firewall applied at the subnet level.
+
+### Simple Structure
+
+```text
+VPC
+├── Public Subnet → Internet Gateway → Internet
+│
+└── Private Subnet → NAT Gateway → Internet
+```
+
+**In simple terms:** VPC is the network, subnets divide it, route tables decide the path, gateways connect it to the internet, and security groups/NACLs control the traffic.
