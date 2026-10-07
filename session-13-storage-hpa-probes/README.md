@@ -48,4 +48,6 @@ Here is a quick rundown of the main storage concepts I learned about in this ses
 - **Volume Documentation**: Created a PersistentVolumeClaim (pvc.yaml) requesting 500Mi of ReadWriteOnce storage. This PVC is mounted to /data within our deployment, guaranteeing that data outlives Pod deletions and restarts. Verification: Proved persistence by writing a test file (student.txt) into /data on a running Pod, deleting the Pod, and verifying that the newly scheduled Pod successfully retained the file.
 - **Implementation**: Successfully deployed a production-ready Web App inside a dedicated `production-webapp` namespace. The deployment combines state persistence (PVC), elastic scaling (HPA targeting 50% CPU), and full application health diagnostics (Startup, Readiness, and Liveness probes correctly configured).
 
-`[SCREENSHOT HERE: Mini-project results]`
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
