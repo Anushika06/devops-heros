@@ -11,6 +11,27 @@ Terraform provisioned the following AWS resources:
 - EC2 Instance
 - S3 Bucket
 
+```mermaid
+graph TD
+    subgraph AWS Cloud
+        S3[🪣 Amazon S3 Bucket]
+        
+        subgraph VPC ["☁️ VPC"]
+            subgraph Subnet ["🟢 Public Subnet"]
+                SG["🛡️ Security Group\n(Allows HTTP/SSH)"]
+                EC2["🖥️ EC2 Instance"]
+                SG --- EC2
+            end
+        end
+    end
+    
+    style S3 fill:#f0a500,color:#fff
+    style VPC fill:#4a90d9,color:#fff
+    style Subnet fill:#2ecc71,color:#fff
+    style SG fill:#e04b5a,color:#fff
+    style EC2 fill:#f39c12,color:#fff
+```
+
 ### Outputs & Screenshots
 ![architecture/output](06-terraform-vpc/image-6.png)
 ![terraform apply 1](06-terraform-vpc/image.png)
