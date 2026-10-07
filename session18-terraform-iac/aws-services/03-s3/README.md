@@ -1,23 +1,10 @@
-# S3 - Storage (Simple Storage Service)
-
-## What is S3?
-Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. You can use it to store and retrieve any amount of data from anywhere.
-
-## Key Concepts
-
-- **Buckets:** The fundamental container in S3 for objects. You can think of it like a top-level folder. Bucket names must be globally unique across all of AWS.
-- **Objects:** The fundamental entities stored in Amazon S3. An object consists of the file data itself and its metadata (key-value pairs describing the object).
-- **Storage Classes:** S3 offers different tiers based on how often you access data:
-  - **S3 Standard:** Frequent access.
-  - **S3 Standard-IA (Infrequent Access):** Less frequent access but requires rapid access when needed.
-  - **S3 Glacier:** Low-cost storage for archiving data.
-- **Versioning:** Allows you to keep multiple variants of an object in the same bucket. It helps recover from both unintended user actions and application failures.
-- **Lifecycle Policies:** Rules you define to automatically transition objects between storage classes (e.g., move to Glacier after 30 days) or delete them to save costs.
-- **Encryption:** Protecting your data in S3. S3 supports both server-side encryption (AWS encrypts it for you) and client-side encryption (you encrypt before uploading).
-- **Bucket Policies:** JSON-based access policies attached to a bucket to grant or deny permissions across all or a subset of objects within that bucket.
-
-## Common Use Cases
-- Hosting static websites (HTML, CSS, JS files).
-- Storing backups, snapshots, and archives.
-- Storing user-generated media (photos, videos) for web and mobile apps.
-- Data lakes for big data analytics.
+# 03. S3 - Storage
+- **What is S3?**: Simple Storage Service; scalable object storage.
+- **Buckets**: Containers for storing objects (files).
+- **Objects**: The fundamental entities stored in S3 (file data + metadata).
+- **Storage Classes**: Standard, IA (Infrequent Access), Glacier, etc., balancing cost vs retrieval time.
+- **Versioning**: Keeping multiple variants of an object in the same bucket.
+- **Lifecycle Policies**: Automating moving objects between storage classes or deleting them.
+- **Encryption**: Securing data at rest (SSE-S3, SSE-KMS, etc.).
+- **Bucket Policies**: Resource-based policies defining access permissions for the bucket.
+- **Common Use Cases**: Backups, static website hosting, big data analytics, media storage.
