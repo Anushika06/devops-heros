@@ -23,4 +23,4 @@ An end-to-end DevOps project integrating concepts from the entire course.
 `[SCREENSHOT HERE: Project components and troubleshooting before/after]`
 
 ## Lessons Learned
-`[Document lessons learned here]`
+
