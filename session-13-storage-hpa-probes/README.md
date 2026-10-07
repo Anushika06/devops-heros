@@ -51,3 +51,4 @@ Here is a quick rundown of the main storage concepts I learned about in this ses
 ![alt text](image.png)
 ![alt text](image-1.png)
 ![alt text](image-2.png)
+![alt text](image-3.png)
