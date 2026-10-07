@@ -5,7 +5,13 @@ Created an AWS S3 bucket using Terraform.
 - **Project Structure**: `main.tf`, `variables.tf`, `outputs.tf`, `provider.tf`, `terraform.tfvars`.
 - **Terraform Commands Executed**: `init`, `fmt`, `validate`, `plan`, `apply`, `show`, `output`, `destroy`.
 
-`[SCREENSHOT HERE: Terraform apply / destroy outputs]`
+![terraform apply 1](terraform-s3-demo/image.png)
+![terraform apply 2](terraform-s3-demo/image-1.png)
+![terraform apply 3](terraform-s3-demo/image-2.png)
+![terraform apply 4](terraform-s3-demo/image-3.png)
+![terraform apply 5](terraform-s3-demo/image-4.png)
+![terraform apply 6](terraform-s3-demo/image-5.png)
+![terraform destroy](terraform-s3-demo/image-6.png)
 
 ## Task 2: AWS Services Research
 Research notes on AWS services have been documented in the `aws-services/` directory:
