@@ -39,17 +39,22 @@ Practical execution of common troubleshooting commands (`get`, `describe`, `logs
 - **Pending / ContainerCreating**: 
   ![pending pod](image-17.png)
   ![fixed pod](image-18.png)
-- **Service / DNS / Networking / Configuration issues**: `[Root cause & solution]`
+
 
 ## Task 3: Mini Project (Troubleshooting Challenge)
-- **Problem Statement**: `[State the problem]`
-- **Investigation Steps**: `[Commands used to investigate]`
-- **Root Cause**: `[Found root cause]`
-- **Solution**: `[Applied fix]`
+- **Problem Statement**: A Pod failed to start properly, and a Service was unable to route traffic to the application.
+- **Investigation Steps**: Used `kubectl get pods`, `kubectl describe pod`, `kubectl get service`, and `kubectl get endpoints` to inspect the cluster state, events, and label mismatches.
+- **Root Cause**: 1) The Pod had an invalid image name causing an `ImagePullBackOff`. 2) The Service `selector` (`app: wrong-app`) did not match the Pod's label (`app: troubleshooting-app`), resulting in no endpoints being created.
+- **Solution**: Corrected the image name in the Pod manifest and updated the Service selector to correctly match the Pod labels. Re-applied configurations using `kubectl apply -f`.
 
-### Before & After Output
-`[SCREENSHOT HERE: Before fix]`
-`[SCREENSHOT HERE: After fix]`
+### Screenshots
+![alt text](image-19.png)
+![alt text](image-20.png)
+![alt text](image-21.png)
+![alt text](image-22.png)
+![alt text](image-23.png)
+![alt text](image-24.png)
+
 
 ## Difference Between `kubectl logs` and `kubectl events`
 
