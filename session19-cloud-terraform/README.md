@@ -17,4 +17,4 @@ Terraform provisioned the following AWS resources:
 - **Providers, Variables, Resources, Outputs, Dependencies**: Defined in `.tf` files.
 - **Commands Executed**: `plan`, `apply`, `destroy`.
 
-`[SCREENSHOT HERE: AWS Resources created & Terraform outputs]`
+
