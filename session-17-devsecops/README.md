@@ -16,4 +16,4 @@ Integrated security checks into the CI/CD pipeline.
 ## Pipeline Flow
 Code -> Build -> Unit Test -> SAST -> SCA -> Secret Scan -> Docker Build -> Container Image Scan -> Security Gate -> Push Image -> Deploy to Kubernetes.
 
-`[SCREENSHOT HERE: Successful pipeline output including security gates]`
+
