@@ -22,15 +22,17 @@ Executed essential Helm commands (`create`, `install`, `list`, `status`, `upgrad
 ![install upgrade 3](07-install-upgrade/image-2.png)
 
 ## Task 2: Helm Rollback
-Successfully performed the rollback workflow (Install -> Upgrade -> Verify -> Upgrade -> Verify -> Rollback -> Verify).
+Successfully performed the rollback workflow:
 
-`[SCREENSHOT HERE: Rollback verification]`
+![alt text](image.png)
 
 ## Task 3: Mini Project
-- **Helm Chart**: `[Path/link to chart]`
-- **values.yaml**: `[Details/link]`
-- **Templates**: `[Details/link]`
-- **Installation & Upgrade**: `[Notes]`
-- **Rollback**: `[Notes]`
+- **Helm Chart**: [notes-chart](mini-project/notes-chart)
+- **values.yaml**: [values.yaml](mini-project/notes-chart/values.yaml) and [values-prod.yaml](mini-project/notes-chart/values-prod.yaml)
+- **Templates**: [templates directory](mini-project/notes-chart/templates) (Deployment, Service, ConfigMap)
+- **Installation & Upgrade**: Installed dev version, then successfully upgraded using `values-prod.yaml` to scale up to 3 replicas.
+- **Rollback**: Simulated a bad upgrade with an invalid image tag resulting in ImagePullBackOff, then successfully performed a rollback (`helm rollback`) to a healthy state.
 
-`[SCREENSHOT HERE: Mini-project outputs]`
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
