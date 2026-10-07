@@ -4,6 +4,7 @@
 The source code, Dockerfiles, and GitHub Actions workflows for these pipelines are located in their respective repositories:
 - **Repo 1**: [Anushika06/ci-cd-demo](https://github.com/Anushika06/ci-cd-demo)
 - **Repo 2**: [Anushika06/CI-CD-Pipeline](https://github.com/Anushika06/CI-CD-Pipeline)
+- **Repo 3 (10-final-cicd-pipeline)**: [Anushika06/CI-CD-Assignment](https://github.com/Anushika06/CI-CD-Assignment)
 
 ### CI Pipeline
 - Build and Test steps configured using GitHub Actions runners.
@@ -15,3 +16,4 @@ The source code, Dockerfiles, and GitHub Actions workflows for these pipelines a
 
 ![Pipeline Execution 1](https://raw.githubusercontent.com/Anushika06/ci-cd-demo/main/Screenshot%202026-10-08%20011027.png)
 ![Pipeline Execution 2](https://raw.githubusercontent.com/Anushika06/CI-CD-Pipeline/main/image.png)
+![Pipeline Execution 3](https://raw.githubusercontent.com/Anushika06/CI-CD-Assignment/main/image.png)
