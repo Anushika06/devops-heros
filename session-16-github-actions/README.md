@@ -12,4 +12,4 @@
 - Deployment steps configured.
 
 ## Pipeline Execution
-`[SCREENSHOT HERE: Successful pipeline execution]`
+
