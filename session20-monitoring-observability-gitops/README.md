@@ -14,4 +14,3 @@
 - **GitOps Demo**: Demonstrated declarative configuration, continuous reconciliation using Git as the source of truth.
 - **Workflow**: `[Details of Kubernetes + GitOps workflow]`
 
-`[SCREENSHOT HERE: GitOps synchronization]`
